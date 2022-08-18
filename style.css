@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'shadows';
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    background-image: url(christopher-gower-m_HRfLhgABo-unsplash.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+.hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: rgb(87, 81, 81);
+}
+
+.hero h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: grey;
+    animation: text_reveal_box 0.5s ease;
+    animation-delay: 0s;
+}
+
+.hero .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 3px solid grey;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+    border-radius: 10px;
+}
+
+.hero .container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 0 100px;
+    justify-content: flex-start;
+}
+
+.hero .cta:hover {
+    color: white;
+    background-color: black;
+}
+
+#keahlian {}
+
+#keahlian .keahlian {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#keahlian .section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+#keahlian .section-title span {
+    color: crimson;
+}
+
+#keahlian .keahlian-atas p {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+
+#keahlian .keahlian-bawah {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#keahlian .keahlian-item {
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(arif-riyanto-1DRq1ZsE2N0-unsplash.jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    color: aliceblue;
+}
+
+#keahlian .keahlian-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#keahlian .keahlian-bawah .icon {
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+}
+
+#keahlian .keahlian-bawah img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#keahlian .keahlian-item h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#keahlian .keahlian-item p {
+    color: white;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+
+.foto {
+    border-radius: 50%;
+    background-color: grey;
+    width: 50%;
+    height: 50%;
+    margin-right: 1px;
+}
+
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
